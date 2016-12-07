@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_set_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_set_alarm"
+        tools:context="com.jack.laboratory5_6.activity.SetAlarmActivity">
+
+    <ImageButton
+            android:layout_width="28dp"
+            android:layout_height="28dp" app:srcCompat="@drawable/ic_add_yellow"
+            android:id="@+id/submit_button_add"
+            android:background="#FF0000"
+            android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:background="#F9F6ED"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_grey"
+            android:layout_marginTop="170dp" android:id="@+id/description_button_add"
+            android:layout_below="@+id/submit_button_add" android:layout_alignParentEnd="true"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_grey"
+            android:background="#ffffff"
+            android:id="@+id/time_button_add"
+            android:layout_marginTop="62dp"
+            android:layout_below="@+id/description_button_add" android:layout_alignParentEnd="true"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_grey"
+            android:background="#F9F6ED"
+            android:layout_marginTop="57dp" android:id="@+id/date_button_add"
+            android:layout_below="@+id/time_button_add" android:layout_alignParentEnd="true"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_grey"
+            android:background="#ffffff"
+            android:id="@+id/pattern_button_add"
+            android:layout_below="@+id/date_button_add" android:layout_alignParentEnd="true"
+            android:layout_marginTop="51dp"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_grey"
+            android:id="@+id/repetition_button_add"
+            android:background="#F9F6ED"
+            android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+            android:layout_marginBottom="7dp"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_alarm_menu"
+            android:background="#FF0000"
+            android:layout_above="@+id/description_button_add" android:layout_alignParentStart="true"
+            android:id="@+id/main_menu_button_add"/>
+    <TextView
+            android:text="Set Alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="@android:color/background_light" android:textSize="18sp"
+            android:layout_alignBottom="@+id/main_menu_button_add" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:text="Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:id="@+id/description_text_add_bottom"
+            android:layout_below="@+id/time_date_text_add" android:layout_centerHorizontal="true"
+            android:textColor="@android:color/background_light"/>
+    <TextView
+            android:text="Set Repetition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14" android:textColor="#FF0000"
+            android:layout_above="@+id/repetition_button_add" android:layout_alignStart="@+id/pattern"/>
+    <TextView
+            android:text="User Default Pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pattern"
+            android:textColor="#484A4C"
+            android:layout_alignBottom="@+id/pattern_button_add" android:layout_alignStart="@+id/pattern_text_add"/>
+    <TextView
+            android:text="Set Unlocker Pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pattern_text_add"
+            android:textColor="#FF0000"
+            android:layout_alignBottom="@+id/pattern" android:layout_alignStart="@+id/date_text_add"
+            android:layout_marginBottom="18dp"/>
+    <TextView
+            android:text="Set Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textColor="#FF0000"
+            android:layout_alignBottom="@+id/description_button_add" android:layout_alignStart="@+id/description_text_add"
+            android:layout_marginBottom="20dp"/>
+    <TextView
+            android:text="Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/description_text_add"
+            android:textColor="#484A4C"
+            android:layout_marginEnd="47dp"
+            android:layout_above="@+id/time_button_add" android:layout_alignEnd="@+id/description_text_add_bottom"/>
+    <TextView
+            android:text="Set Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textColor="#FF0000"
+            android:layout_alignBottom="@+id/time_button_add" android:layout_alignStart="@+id/description_text_add"
+            android:layout_marginBottom="20dp"/>
+    <TextView
+            android:text="Set Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textColor="#FF0000"
+            android:layout_alignBottom="@+id/date_button_add" android:layout_alignStart="@+id/time_text_add"
+            android:layout_marginBottom="23dp"/>
+    <TextView
+            android:text="25 Dec 2016"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_text_add"
+            android:textColor="#484A4C"
+            android:layout_alignBottom="@+id/date_button_add" android:layout_alignStart="@+id/textView10"/>
+    <TextView
+            android:text="09:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_text_add"
+            android:textColor="#484A4C"
+            android:layout_above="@+id/date_button_add" android:layout_alignStart="@+id/textView8"/>
+    <TextView
+            android:text="Does not repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/repetition_text_add" android:textColor="#484A4C"
+            android:layout_below="@+id/textView14" android:layout_alignStart="@+id/textView14"/>
+    <TextView
+            android:text="25 Dec 2016 | 09:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp" android:id="@+id/time_date_text_add"
+            android:textColor="#484A4C" android:layout_below="@+id/textView3" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

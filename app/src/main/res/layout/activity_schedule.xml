@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_schedule_list"
+        tools:context="com.jack.laboratory5_6.activity.ScheduleActivity">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_alarm_menu"
+                android:background="#FF0000"
+                android:id="@+id/main_menu_button_list"
+                android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+        <TextView
+                android:text="Schedule List"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" android:id="@+id/textView27" android:textSize="18sp"
+                android:textColor="@android:color/background_light"/>
+        <TextView
+                android:text="Me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_above="@+id/date_text_list"
+                android:layout_toEndOf="@+id/date_text_list" android:layout_marginStart="49dp"
+                android:layout_marginBottom="29dp" android:id="@+id/name_list" android:textColor="#FFCF06"
+                android:textSize="18sp"/>
+        <TextView
+                android:text="No Upcoming Events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_above="@+id/date_text_list"
+                android:layout_alignStart="@+id/name_list" android:id="@+id/description_text_list" android:textSize="14sp"
+                android:textColor="@android:color/background_light"/>
+        <TextView
+                android:text="                    "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:id="@+id/date_text_list" android:textColor="#484A4C"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp" android:layout_below="@+id/time_text_list"
+                android:layout_toEndOf="@+id/main_menu_button_list"/>
+        <TextView
+                android:text="          "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:id="@+id/time_text_list" android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:layout_below="@+id/main_menu_button_list" android:layout_toStartOf="@+id/textView27"/>
+        <Button
+                android:text="Edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_edit_list"
+                android:background="@android:color/background_light"
+                android:textColor="#484A4C" android:elevation="0dp"
+                android:layout_alignBaseline="@+id/date_text_list" android:layout_alignBottom="@+id/date_text_list"
+                android:layout_alignParentEnd="true"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_yellow"
+                android:background="#FF0000"
+                android:id="@+id/add_button_list"
+                android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="343dp"
+            android:fitsSystemWindows="true"
+            android:background="#ffffff"
+            android:layout_gravity="bottom|center_horizontal">
+        <ListView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        </ListView>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

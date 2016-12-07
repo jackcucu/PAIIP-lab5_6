@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" android:background="@drawable/ic_home"
+             tools:context="com.jack.laboratory5_6.FullscreenActivity">
+    <TextView
+            android:text="nevel failed to wake you up!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_above="@+id/button" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp" android:textColor="#A82020"/>
+    <TextView
+            android:text="WakeApp!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp" android:id="@+id/textView"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" android:textSize="48sp"
+            android:layout_above="@+id/textView2" android:layout_centerHorizontal="true"/>
+    <Button
+            android:text="Enter app"
+            android:layout_width="wrap_content"
+            android:textColor="#A82020"
+            android:background="#FDCE0C"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="156dp" android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>
